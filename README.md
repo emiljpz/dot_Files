@@ -8,8 +8,10 @@ Custom modules in polybar for OpenSuse, working in L14 Thinkpad
 dependencies:
 [module/brightness]
 uses light dependency be aware
+  
 [module/battery]
 use ; $ ls -1 /sys/class/power_supply/ to get battery name, line 178 polybar/config.ini
+  
 [module/temperature]
 check this path : "hwmon-path = /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon5/temp1_input" to get the temp data.
 
