@@ -11,6 +11,7 @@ polybar-msg cmd quit
 #polybar bar1 2>&1 | tee -a /tmp/polybar1.log & disown
 #polybar bar2 2>&1 | tee -a /tmp/polybar2.log & disown
 
+#shows bar on all screens source: https://github.com/polybar/polybar/issues/763#issuecomment-392960721
 for m in $(polybar --list-monitors | cut -d":" -f1); do
     MONITOR=$m polybar --reload example &
 done
