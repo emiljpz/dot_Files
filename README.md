@@ -6,6 +6,7 @@
 
 Custom modules in polybar for OpenSuse, working in L14 Thinkpad
 dependencies:
+  
 [module/brightness]
 uses light dependency be aware
   
